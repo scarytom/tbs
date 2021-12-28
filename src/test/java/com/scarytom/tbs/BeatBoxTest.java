@@ -8,7 +8,7 @@ public class BeatBoxTest {
 
     @Test
     public void kick() {
-        BeatBox beatBox = JavaInterop.makeBeatbox();
+        BeatBox beatBox = JavaInterop.makeBeatBox();
         assertEquals("BOOMBOOMBOOM", beatBox.kick(3));
     }
 }
