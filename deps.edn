@@ -1,0 +1,10 @@
+{:deps      {org.clojure/clojure                  {:mvn/version "1.10.3"}}
+ :paths     ["src/main/clojure" "src/main/java" "classes"]
+ :aliases   {:dev      {:extra-paths ["src/dev/clojure"]}
+             :test     {:extra-paths ["src/test/clojure" "src/test/java"]
+                        :extra-deps  {junit/junit            {:mvn/version "4.13.2"}
+                                      lambdaisland/kaocha    {:mvn/version "1.60.972"}
+                                      org.clojure/test.check {:mvn/version "1.1.1"}}
+                        :main-opts   ["-m" "kaocha.runner"]}
+             :build {:deps {io.github.clojure/tools.build {:git/tag "v0.7.4" :git/sha "ac442da"}}
+                     :ns-default build}}}
