@@ -1,5 +1,5 @@
 (ns com.scarytom.tbs.java-interop
-  (require [com.scarytom.tbs.beat-box :as bb])
+  (:require [com.scarytom.tbs.beat-box :as bb])
   (:import [com.scarytom.tbs BeatBox]))
 
 (gen-class

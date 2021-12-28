@@ -1,5 +1,5 @@
 {:deps      {org.clojure/clojure                  {:mvn/version "1.10.3"}}
- :paths     ["src/main/clojure" "src/main/java" "classes"]
+ :paths     ["src/main/clojure" "src/main/java" "target/java-classes" "target/clj-classes"]
  :aliases   {:dev      {:extra-paths ["src/dev/clojure"]}
              :test     {:extra-paths ["src/test/clojure" "src/test/java"]
                         :extra-deps  {junit/junit            {:mvn/version "4.13.2"}
